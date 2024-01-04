@@ -1,10 +1,17 @@
+@use "../abstract/index-abs" as abs;
 html {
   // --text-color: #1a162e;
   --text-color: #1a162e;
   --icon-color: brightness(0) saturate(100%) invert(10%) sepia(12%)
     saturate(2681%) hue-rotate(210deg) brightness(92%) contrast(99%);
+
+  --body--bg: #f6f6f6;
   --header-bg-color: #eee;
   --top-act-group-bg-color: #fff;
   --top-act-group-bs-color: rgba(237, 237, 246, 0.2);
   --top-act-btn-separate-color: #ededf6;
+
+  @include abs.breakpoint(lg) {
+    --header-bg-color: #fff;
+  }
 }
