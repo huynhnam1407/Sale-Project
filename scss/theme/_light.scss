@@ -14,4 +14,8 @@ html {
   @include abs.breakpoint(lg) {
     --header-bg-color: #fff;
   }
+
+  // Dropdown
+  --dropdown-bg-color: #fff;
+  --dropdown-bs-color: rgba(200, 200, 200, 0.4);
 }
