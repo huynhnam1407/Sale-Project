@@ -1,10 +1,12 @@
+@use "../abstract/index-abs" as abs;
+
 .dropdown {
   position: absolute;
   left: 0;
   padding-top: 54px;
   width: min(1240px, 100%);
 
-  // display: none;
+  display: none;
 
   &__inner {
     // Biến cho mega menu
@@ -36,6 +38,10 @@
     flex-shrink: 0;
     width: 36px;
     height: 36px;
+
+    @include abs.breakpoint(xl) {
+      display: none;
+    }
   }
 
   &__content {
@@ -75,7 +81,7 @@
   &__icon-1 {
     width: 30px;
     height: 30px;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   &__icon-2 {
@@ -84,7 +90,7 @@
     bottom: 0;
     width: 24px;
     height: 24px;
-    object-fit: cover;
+    object-fit: contain;
 
     filter: var(--menu-columns-icon-color);
   }
@@ -114,6 +120,6 @@
   &__columns {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
   }
 }
