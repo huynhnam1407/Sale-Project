@@ -29,14 +29,6 @@
     padding: 16px;
     justify-content: space-between;
   }
-
-  &__more {
-    display: none;
-
-    @include abs.breakpoint(lg) {
-      display: block;
-    }
-  }
 }
 
 .navbar {
@@ -158,9 +150,9 @@
     background: var(--top-act-group-bg-color);
     box-shadow: 0px 20px 60px 10px var(--top-act-group-bs-color);
 
-    @include abs.breakpoint(md) {
-      display: none;
-    }
+    // @include abs.breakpoint(md) {
+    //   display: none;
+    // }
 
     @include abs.breakpoint(sm) {
       display: none;
