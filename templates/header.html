@@ -12,7 +12,7 @@
     </a>
 
     <!-- Navbar -->
-    <nav id="navbar" class="navbar hide">
+    <nav id="navbar" class="navbar show">
       <button class="navbar__close-btn js-toggle" toggle-target="#navbar">
         <img src="./assets/icons/arrow-left.svg" alt="" />
       </button>
@@ -27,16 +27,18 @@
             <div class="dropdown__inner">
               <div class="top-menu">
                 <div class="top-menu__main">
+                  <!-- Menu columns -->
                   <div class="menu-columns">
-                    <div class="menu-columns__icon">
+                    <div class="menu-columns__icon d-lg-none">
                       <img src="./assets/img/category/cate-1_1.svg" alt="" class="menu-columns__icon-1" />
                       <img src="./assets/img/category/cate-1_2.svg" alt="" class="menu-columns__icon-2" />
                     </div>
                     <div class="menu-columns__content">
-                      <h2 class="menu-columns__heading">All Departments</h2>
+                      <h2 class="menu-columns__heading d-lg-none">All Departments</h2>
                       <ul class="menu-columns__list js-menu-list">
                         <li class="menu-columns__items">
                           <a href="#" class="menu-columns__link">Savings & Featured Shops</a>
+                          <!-- Sub menu for "Savings & Featured Shops" -->
                           <div class="sub-menu">
                             <!-- Sub menu 1 -->
                             <div class="sub-menu__columns">
@@ -47,7 +49,7 @@
                                   <img src="./assets/img/category/cate-2_2.svg" alt="" class="menu-columns__icon-2" />
                                 </div>
                                 <div class="menu-columns__content">
-                                  <a href="#" class="menu-columns__heading"> TV & Video </a>
+                                  <h2 href="#" class="menu-columns__heading">TV & Video</h2>
                                   <ul class="menu-columns__list">
                                     <li class="menu-columns__items">
                                       <a href="" class="menu-columns__link">Shop all TVs</a>
