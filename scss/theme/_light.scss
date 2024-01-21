@@ -11,7 +11,7 @@ html {
   --top-act-group-bs-color: rgba(237, 237, 246, 0.2);
   --top-act-btn-separate-color: #ededf6;
 
-  @include abs.breakpoint(lg) {
+  @include abs.screen(lg) {
     --header-bg-color: #fff;
     --header-sx-color: rgba(237, 237, 246, 0.2);
   }
@@ -25,4 +25,13 @@ html {
 
   // Side bar
   --sidebar-bg: #fff;
+
+  //Categories Item
+  --cate-item--bg: #eee;
+  --cate-item-thumb-bg: #fff;
+  --cate-item-title-bg: #000;
+
+  @include abs.screen(md) {
+    --cate-item--bg: #fff;
+  }
 }

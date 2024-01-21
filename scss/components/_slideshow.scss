@@ -3,12 +3,7 @@
   position: relative;
   &__inner {
     display: flex;
-    margin: 40px 0;
     overflow: hidden;
-
-    @include abs.breakpoint(md) {
-      margin-top: 30px;
-    }
   }
 
   &__item {
@@ -16,7 +11,7 @@
     width: 100%;
     padding-top: 34%;
     flex-shrink: 0;
-    @include abs.breakpoint(md) {
+    @include abs.screen(md) {
       padding-top: 50%;
     }
   }
@@ -69,7 +64,7 @@
       translate: 90% -50%;
     }
 
-    @include abs.breakpoint(md) {
+    @include abs.screen(md) {
       border-width: 3px;
     }
   }
@@ -80,7 +75,7 @@
     line-height: 144.444%;
     color: #fff;
 
-    @include abs.breakpoint(md) {
+    @include abs.screen(md) {
       font-size: 1.4rem;
       line-height: 142.857%;
     }

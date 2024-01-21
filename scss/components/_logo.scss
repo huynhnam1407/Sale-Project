@@ -4,16 +4,16 @@
   align-items: center;
   gap: 14px;
 
-  @include abs.breakpoint(lg) {
+  @include abs.screen(lg) {
     gap: 10px;
     margin-left: 30px;
   }
 
-  @include abs.breakpoint(md) {
+  @include abs.screen(md) {
     margin-left: 0;
   }
 
-  @include abs.breakpoint(sm) {
+  @include abs.screen(sm) {
     margin-left: 0;
   }
 
@@ -23,13 +23,13 @@
     font-weight: 700;
     line-height: 145.455%;
 
-    @include abs.breakpoint(lg) {
+    @include abs.screen(lg) {
       font-size: 1.8rem;
     }
   }
 
   &__img {
-    @include abs.breakpoint(lg) {
+    @include abs.screen(lg) {
       width: 24px;
     }
   }
