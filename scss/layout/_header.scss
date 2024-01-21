@@ -41,7 +41,8 @@
   @include abs.breakpoint(lg) {
     position: fixed;
     padding: 20px 0;
-    background: #fff;
+    background: var(--sidebar-bg);
+    border-radius: 0px 20px 20px 0px;
     z-index: 9;
     inset: 0 50% 0 0;
     margin: 0;
@@ -50,6 +51,7 @@
 
     &.show {
       translate: 0;
+      box-shadow: 0 40px 90px 20px var(--sidebar-bs);
     }
 
     &.show ~ &__overlay {
@@ -58,12 +60,21 @@
     }
   }
 
+  @include abs.breakpoint(sm) {
+    inset: 0 20% 0 0;
+    border-radius: 0px 20px 20px 0px;
+  }
+
   &__close-btn {
     display: none;
 
     @include abs.breakpoint(lg) {
       display: block;
       padding: 10px 40px;
+    }
+
+    @include abs.breakpoint(sm) {
+      padding: 0 20px 10px 20px;
     }
   }
 
@@ -74,8 +85,16 @@
       flex-direction: column;
       align-items: flex-start;
 
-      height: calc(100% - 27px);
+      height: calc(100% - 40px);
       overflow-y: auto;
+    }
+
+    @include abs.breakpoint(md) {
+      height: calc(100% - 144px);
+    }
+
+    @include abs.breakpoint(sm) {
+      height: calc(100% - 128px);
     }
   }
 
@@ -94,6 +113,11 @@
       padding: 0 40px;
       font-size: 1.6rem;
       line-height: 150%;
+    }
+
+    @include abs.breakpoint(sm) {
+      height: 44px;
+      padding: 0 20px;
     }
   }
 
@@ -206,5 +230,28 @@
     height: 50px;
     border-radius: 8px;
     cursor: pointer;
+  }
+}
+
+.nav--btn {
+  height: 50px;
+  align-items: center;
+  padding: 0 40px;
+
+  @include abs.breakpoint(sm) {
+    height: 44px;
+    padding: 0 20px;
+  }
+
+  &__title {
+    margin-left: 16px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 146.667%;
+  }
+
+  &__qnt {
+    @extend .nav--btn__title;
+    margin-left: auto;
   }
 }
