@@ -23,15 +23,30 @@
     <title>Sale Store</title>
   </head>
   <body>
+    <!-- Header -->
     <header id="header" class="header"></header>
     <script>
       load("#header", "./templates/header.html");
     </script>
     <div class="container">
-      <!-- Header -->
-
-      <!-- Main -->
-      <h1>Home Page</h1>
+      <!-- Slideshow -->
+      <div class="slideshow">
+        <div class="slideshow__inner">
+          <div class="slideshow__item">
+            <a href="#!" class="slideshow__link">
+              <picture>
+                <source media="(max-width: 767.98px)" srcset="../Sale-store/assets/img/Silde/item-1__mobile.png" />
+                <img src="../Sale-store/assets/img/Silde/item-1.png" alt="" class="slideshow__img" />
+              </picture>
+            </a>
+          </div>
+        </div>
+        <div class="slideshow__page">
+          <span class="slideshow__num">1</span>
+          <span class="slideshow__slider"></span>
+          <span class="slideshow__num">5</span>
+        </div>
+      </div>
 
       <!-- Footer -->
       <footer id="footer"></footer>
