@@ -4,33 +4,10 @@
   align-items: center;
   gap: 14px;
 
-  @include abs.screen(lg) {
-    gap: 10px;
-    margin-left: 30px;
-  }
-
-  @include abs.screen(md) {
-    margin-left: 0;
-  }
-
-  @include abs.screen(sm) {
-    margin-left: 0;
-  }
-
   &__title {
     font-size: 2.2rem;
     font-style: normal;
     font-weight: 700;
     line-height: 145.455%;
-
-    @include abs.screen(lg) {
-      font-size: 1.8rem;
-    }
-  }
-
-  &__img {
-    @include abs.screen(lg) {
-      width: 24px;
-    }
   }
 }

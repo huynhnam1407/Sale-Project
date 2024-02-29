@@ -7,6 +7,8 @@ html {
 
   --body--bg: #f6f6f6;
   --header-bg-color: #eee;
+  --footer-bg-color: var(--header-bg-color);
+
   --top-act-group-bg-color: #fff;
   --top-act-group-bs-color: rgba(237, 237, 246, 0.2);
   --top-act-btn-separate-color: #ededf6;
@@ -33,5 +35,33 @@ html {
 
   @include abs.screen(md) {
     --cate-item--bg: #fff;
+  }
+
+  // Filter button
+  --filter-btn-color: #6c6c72;
+  --filter-btn-bg: #fff;
+
+  // Product card
+  --product-card-bg: #fff;
+  --product-card-bs: rgba(237, 237, 246, 0.2);
+
+  // Like button
+  --like-btn-bs: rgba(124, 124, 124, 0.2);
+
+  // Filter form
+  --filter-form-bg: #fff;
+  --filter-form-bs: rgba(200, 200, 200, 0.4);
+  --filter-form-tags-bg: #f8f8fb;
+  --filter-form-footer-bg: #fff;
+
+  // Auth
+  --auth__content-bg: #fff;
+  --auth__desc-bg: #9e9da8;
+  --auth__link-bg: #0071dc;
+  --form__text-input-bg: #d2d1d6;
+  --form-placeholder-bg: #d2d1d6;
+
+  @include abs.screen(md) {
+    --auth-intro-bg: #fff;
   }
 }

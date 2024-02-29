@@ -1,3 +1,4 @@
+@use "../abstract/index-abs" as abs;
 *,
 ::before,
 ::after {
@@ -22,8 +23,15 @@ input,
 select,
 textarea {
   font-family: inherit;
+  padding: 0;
   color: inherit;
+  border: none;
+  outline: none;
   -webkit-tap-highlight-color: transparent;
+}
+
+input {
+  background: transparent;
 }
 
 a {
@@ -35,8 +43,17 @@ button {
   border: none;
   outline: none;
   background: transparent;
+  padding: 0;
+  cursor: pointer;
 }
 
 .icon {
   filter: var(--icon-color);
+}
+
+.container {
+  @include abs.screen(sm) {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }

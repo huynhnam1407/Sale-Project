@@ -30,6 +30,37 @@
     padding: 16px;
     justify-content: space-between;
   }
+
+  &__logo {
+    @include abs.screen(lg) {
+      gap: 10px !important;
+      margin-left: 30px;
+    }
+
+    @include abs.screen(md) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      margin-left: 0;
+    }
+
+    @include abs.screen(sm) {
+      margin-left: 0;
+    }
+
+    &-title {
+      @include abs.screen(lg) {
+        font-size: 1.8rem !important;
+      }
+    }
+
+    &-img {
+      @include abs.screen(lg) {
+        width: 24px;
+      }
+    }
+  }
 }
 
 .navbar {
@@ -175,6 +206,12 @@
 
   @include abs.screen(md) {
     margin-left: 0;
+
+    &__sign-up {
+      height: 40px !important;
+      padding: 0 12px !important;
+      font-size: 1.5rem !important;
+    }
   }
 
   @include abs.screen(sm) {
